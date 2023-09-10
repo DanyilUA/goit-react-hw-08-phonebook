@@ -1,8 +1,8 @@
 import { nanoid } from 'nanoid';
 import css from './Phonebook.module.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectContacts } from 'redux/selectors';
-import { addContact } from 'redux/operations';
+import { selectContacts } from 'redux/contacts/selectors';
+import { addContact } from 'redux/contacts/operations';
 
 export default function Phonebook() {
 
