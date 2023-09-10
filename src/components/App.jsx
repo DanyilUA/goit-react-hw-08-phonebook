@@ -7,11 +7,12 @@ import { RestrictedRoute } from './RestrictedRoute';
 import { PrivateRoute } from './PrivateRoute';
 import { Layout } from './Layout';
 
-
+// const Layout = lazy(() => import('./Layout'));
 const ContactsPage = lazy(() => import('pages/Contacts/Contacts'));
 const LogInPage = lazy(() => import('pages/Login/Login'));
 const RegisterPage = lazy(() => import('pages/Register/Register'));
 const HomePage = lazy(() => import('pages/Home/Home')); 
+const NotFound = lazy(() => import('../pages/NotFound/NotFound'));
 
 export default function AppPhoneBook() {
   const dispatch = useDispatch();
@@ -47,7 +48,8 @@ export default function AppPhoneBook() {
           element={
             <PrivateRoute redirectTo="/login" component={<ContactsPage />} />
           }
-        />
+          />
+          <Route path="*" element={<NotFound/>} />
       </Route>
     </Routes>
   );
