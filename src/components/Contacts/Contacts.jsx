@@ -12,10 +12,12 @@ export function ContactsList() {
       contact.name.toLowerCase().includes(filter.toLowerCase())
     );
   };
-  
+  const showContacts = Array.isArray(contacts) && contacts.length > 0;
+
     return (
       <ul className={css.contact__list}>
-        {getFilteredContacts().map(contact => (
+        {showContacts &&
+          getFilteredContacts().map(contact => (
           <li key={contact.id} className={css.contact}>
             <Contact contact={contact} />
           </li>

@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { AppBar } from "./AppBar/AppBar"
 import { Suspense } from "react";
-// import RiseLoader from 'react-spinners/RiseLoader';
+import { Loader } from "./Loader/Loader";
 
 
 export const Layout = () => {
@@ -9,8 +9,7 @@ export const Layout = () => {
     return (
       <div>
         <AppBar />
-        <Suspense
-          fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loader />}>
           <Outlet />
         </Suspense>
       </div>
