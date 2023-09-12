@@ -1,7 +1,6 @@
+import { Box, Button, FormControl, FormLabel, Input } from "@chakra-ui/react";
 import { useDispatch } from "react-redux";
 import { logIn } from "redux/auth/operations";
-
-
 
 export const LogInForm = () => {
 
@@ -17,36 +16,56 @@ export const LogInForm = () => {
         form.reset();
     };
 
+      const labelStyle = {
+        fontSize: '24px',
+        fontWeight: '600',
+        fontStyle: 'italic',
+        color: 'black',
+      };
+  
     return (
-      <div>
-        <h1>Login Page</h1>
-        <form
-          action=""
-          autoComplete="off"
-          className="form"
-          onSubmit={handleSubmit}
-        >
-          <label htmlFor="">
-            <span>Email</span>
-            <input
-              type="email"
-              name="email"
-              variant="filled"
-              placeholder="enter your email"
-            />
-          </label>
-          <label htmlFor="">
-            <span>Password</span>
-            <input
-              type="password"
-              name="password"
-              variant="filled"
-              placeholder="enter your password"
-              minLength={7}
-            />
-          </label>
-          <button type="submit">Log in</button>
-        </form>
-      </div>
+      <Box ml={10}>
+        <Box maxW="480px" backgroundColor="">
+          <form
+            action=""
+            autoComplete="off"
+            className="form"
+            onSubmit={handleSubmit}
+          >
+            <FormControl isRequired mb="20px">
+              <FormLabel style={labelStyle}>Email</FormLabel>
+              <Input
+                type="email"
+                name="email"
+                variant="filled"
+                placeholder="enter your email"
+                ccolor="black"
+                fontSize="20px"
+                letterSpacing="1.3"
+                _focus={{
+                  backgroundColor: 'lightblue',
+                }}
+              />
+            </FormControl>
+            <FormControl isRequired mb="20px">
+              <FormLabel style={labelStyle}>Password</FormLabel>
+              <Input
+                type="password"
+                name="password"
+                variant="filled"
+                placeholder="enter your password"
+                minLength={7}
+                color="black"
+                fontSize="20px"
+                letterSpacing="1.3"
+                _focus={{
+                  backgroundColor: 'lightblue',
+                }}
+              />
+            </FormControl>
+            <Button type="submit">Log in</Button>
+          </form>
+        </Box>
+      </Box>
     );
 };

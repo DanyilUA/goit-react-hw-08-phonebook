@@ -1,8 +1,8 @@
 import { nanoid } from 'nanoid';
-import css from './Phonebook.module.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectContacts } from 'redux/contacts/selectors';
 import { addContact } from 'redux/contacts/operations';
+import { Box, Button, FormLabel, Input } from '@chakra-ui/react';
 
 export default function Phonebook() {
 
@@ -34,38 +34,54 @@ export default function Phonebook() {
     
     form.reset();
   };
+        const labelStyle = {
+          fontSize: '24px',
+          fontWeight: '600',
+          fontStyle: 'italic',
+          color: 'black',
+        };
 
   return (
-    <div className={css.container}>
-      <form action="" onSubmit={handleFomSubmit} className={css.form}>
-        <label htmlFor={nameInputId} className={css.label}>
+    <Box maxW={480}>
+      <form action="" onSubmit={handleFomSubmit}>
+        <FormLabel htmlFor={nameInputId} style={labelStyle}>
           Name
-          <input
+          <Input
             type="text"
             name="name"
             pattern="^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
             title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
             required
             id={nameInputId}
-            className={css.input}
+            placeholder="enter your email"
+            color="black"
+            fontSize="20px"
+            letterSpacing="1.3"
+            _focus={{
+              backgroundColor: 'lightblue',
+            }}
           />
-        </label>
-        <label htmlFor={phoneInputId} className={css.label}>
+        </FormLabel>
+        <FormLabel htmlFor={phoneInputId} style={labelStyle}>
           Phone
-          <input
+          <Input
             type="tel"
             name="number"
             pattern="\+?\d{1,4}?[ .\-\s]?\(?\d{1,3}?\)?[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,9}"
             title="Phone should contain more then 5 numbers (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) ."
             required
             id={phoneInputId}
-            className={css.input}
+            placeholder="enter your email"
+            color="black"
+            fontSize="20px"
+            letterSpacing="1.3"
+            _focus={{
+              backgroundColor: 'lightblue',
+            }}
           />
-        </label>
-        <button type="submit" className={css.button}>
-          Add contact
-        </button>
+        </FormLabel>
+        <Button type="submit">Add contact</Button>
       </form>
-    </div>
+    </Box>
   );
 }

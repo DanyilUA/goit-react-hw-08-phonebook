@@ -6,6 +6,9 @@ import { useEffect } from "react";
 import Filter from "components/Filter/Filter";
 import Phonebook from "components/Phonebook/Phonebook";
 import { Loader } from "components/Loader/Loader";
+import { Box, Heading } from "@chakra-ui/react";
+
+import backgroundImage from '../../images/vintage-typewriter-old-wooden-desk_627494-648.avif';
 
 
 export default function ContactsPage() {
@@ -18,12 +21,23 @@ export default function ContactsPage() {
 
 
     return (
-        <div>
-        <h1>Phonebook</h1>    
+      <Box position="relative" w="100%" minHeight="100vh" overflow="hidden">
+        <Box
+          position="absolute"
+          top={0}
+          left={0}
+          w="100%"
+          h="100%"
+          bg={`url(${backgroundImage}) center/cover no-repeat`}
+          filter="blur(2px)"
+          zIndex={-1}
+        />
         {isLoading && <Loader />}
         <Filter />
+        <Heading>Phonebook</Heading>
+
         <Phonebook />
         <ContactsList />
-      </div>
+      </Box>
     );
 };
