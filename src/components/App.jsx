@@ -6,6 +6,7 @@ import { selectIsRefreshing } from 'redux/auth/selectors';
 import { RestrictedRoute } from './RestrictedRoute';
 import { PrivateRoute } from './PrivateRoute';
 import { Layout } from './Layout';
+import { Loader } from './Loader/Loader';
 
 const ContactsPage = lazy(() => import('pages/Contacts/Contacts'));
 const LogInPage = lazy(() => import('pages/Login/Login'));
@@ -22,7 +23,7 @@ export default function AppPhoneBook() {
   }, [dispatch]);
 
   return isRefreshing ? (
-    <b>Refreshing user ....</b>
+    <Loader />
   ) : (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -47,8 +48,8 @@ export default function AppPhoneBook() {
           element={
             <PrivateRoute redirectTo="/login" component={<ContactsPage />} />
           }
-          />
-          <Route path="*" element={<NotFound/>} />
+        />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );

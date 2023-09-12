@@ -5,6 +5,7 @@ import { selectIsLoading } from "redux/contacts/selectors";
 import { useEffect } from "react";
 import Filter from "components/Filter/Filter";
 import Phonebook from "components/Phonebook/Phonebook";
+import { Loader } from "components/Loader/Loader";
 
 
 export default function ContactsPage() {
@@ -17,11 +18,12 @@ export default function ContactsPage() {
 
 
     return (
-    <div>
+        <div>
+        <h1>Phonebook</h1>    
+        {isLoading && <Loader />}
         <Filter />
-            <div>{isLoading && 'Request in progress, please wait'}</div>
-        <Phonebook/>    
+        <Phonebook />
         <ContactsList />
-    </div>
+      </div>
     );
 };
