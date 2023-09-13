@@ -20,11 +20,11 @@ export const LogInForm = () => {
         fontSize: '24px',
         fontWeight: '600',
         fontStyle: 'italic',
-        color: 'black',
+        color: 'white',
       };
   
     return (
-      <Box ml={10}>
+      <Box ml={20} mt={20}>
         <Box maxW="480px" backgroundColor="">
           <form
             action=""

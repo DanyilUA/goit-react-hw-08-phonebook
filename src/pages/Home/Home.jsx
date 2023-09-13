@@ -1,5 +1,5 @@
-import { Box, Container, Heading } from "@chakra-ui/react";
-import backgroundImage from '../../images/e-learning-smartphone-isometric_1284-22565.avif'
+import { Box, Heading } from "@chakra-ui/react";
+import backgroundImage from '../../images/photo-1450818074504-fb9713fe584e.avif'
 
 export default function HomePage() {
   return (
@@ -11,12 +11,19 @@ export default function HomePage() {
         w="100%"
         h="100%"
         bg={`url(${backgroundImage}) center/cover no-repeat`}
-        filter="blur(3px)"  
+        filter="blur(3px)"
         zIndex={-1}
       />
-      <Container>
-        <Heading color="white">PhoneBook</Heading>
-      </Container>
+      <Heading
+        color="white" // Text color
+        fontSize="6xl" // Font size
+        fontWeight="bold" // Font weight
+        textAlign="center" // Text alignment
+        mt={20}
+        textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)" // Add a text shadow
+      >
+        PhoneBook
+      </Heading>
     </Box>
   );
 }

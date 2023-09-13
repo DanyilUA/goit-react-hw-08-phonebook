@@ -19,9 +19,19 @@ export default function ContactsPage() {
         dispatch(fetchContacts());
     }, [dispatch]);
 
+        const labelStyle = {
+          fontWeight: '600',
+          fontStyle: 'italic',
+          color: 'black',
+        };
+
 
     return (
       <Box position="relative" w="100%" minHeight="100vh" overflow="hidden">
+        <Heading mb={10} style={labelStyle}>
+          Phonebook
+        </Heading>
+
         <Box
           position="absolute"
           top={0}
@@ -34,7 +44,6 @@ export default function ContactsPage() {
         />
         {isLoading && <Loader />}
         <Filter />
-        <Heading>Phonebook</Heading>
 
         <Phonebook />
         <ContactsList />

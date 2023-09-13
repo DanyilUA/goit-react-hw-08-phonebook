@@ -11,15 +11,16 @@ const Filter = () => {
      dispatch(filterContacts(event.currentTarget.value));
    };
 
-      const labelStyle = {
-        fontSize: '24px',
-        fontWeight: '600',
-        fontStyle: 'italic',
-        color: 'black',
-      };
+        const labelStyle = {
+          fontSize: '24px',
+          fontWeight: '600',
+          fontStyle: 'italic',
+          color: 'black',
+        };
+
 
   return (
-    <Box maxW="480px">
+    <Box maxW="480px" mb={10}>
       <FormControl>
         <FormLabel style={labelStyle}>
           Find contacts by name
@@ -35,6 +36,7 @@ const Filter = () => {
             _focus={{
               backgroundColor: 'lightblue',
             }}
+            variant="filled"
           />
         </FormLabel>
       </FormControl>

@@ -26,7 +26,7 @@ export const RegisterForm = () => {
       };
 
     return (
-      <Box ml={10}>
+      <Box ml={20} mt={20}>
         <Box maxW="480px">
           <form onSubmit={handleSubmit}>
             <FormControl isRequired mb="20px">

@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 import { Contact } from 'components/ContactItem/ContactItem';
 import { selectContacts, selectFilter } from 'redux/contacts/selectors';
+import { List, ListItem } from '@chakra-ui/react';
 
 export function ContactsList() {
   const contacts = useSelector(selectContacts);
@@ -14,14 +15,16 @@ export function ContactsList() {
   const showContacts = Array.isArray(contacts) && contacts.length > 0;
 
     return (
-      <ul>
+      <List>
         {showContacts &&
           getFilteredContacts().map(contact => (
-          <li key={contact.id}>
-            <Contact contact={contact} />
-          </li>
-        ))}
-      </ul>
+            <ListItem
+              key={contact.id}
+            >
+              <Contact contact={contact} />
+            </ListItem>
+          ))}
+      </List>
     );
 }
 

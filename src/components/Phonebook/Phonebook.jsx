@@ -53,13 +53,14 @@ export default function Phonebook() {
             title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
             required
             id={nameInputId}
-            placeholder="enter your email"
+            placeholder="contact name"
             color="black"
             fontSize="20px"
             letterSpacing="1.3"
             _focus={{
               backgroundColor: 'lightblue',
             }}
+            variant="filled"
           />
         </FormLabel>
         <FormLabel htmlFor={phoneInputId} style={labelStyle}>
@@ -71,16 +72,26 @@ export default function Phonebook() {
             title="Phone should contain more then 5 numbers (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) ."
             required
             id={phoneInputId}
-            placeholder="enter your email"
+            placeholder="contact phone"
             color="black"
             fontSize="20px"
             letterSpacing="1.3"
             _focus={{
               backgroundColor: 'lightblue',
             }}
+            variant="filled"
           />
         </FormLabel>
-        <Button type="submit">Add contact</Button>
+        <Button
+          type="submit"
+          mt={3}
+          colorScheme="teal"  
+          size="md"  
+          fontWeight="bold" 
+          _hover={{ bg: 'teal.600' }} 
+        >
+          Add contact
+        </Button>{' '}
       </form>
     </Box>
   );

@@ -13,7 +13,7 @@ export default function LogInPage() {
         left={0}
         w="100%"
         h="100%"
-        bg={`url(${backgroundImage}) center/contain no-repeat`}
+        bg={`url(${backgroundImage}) center/cover no-repeat`}
         filter="blur(3px)"
         zIndex={-1}
       />
