@@ -1,29 +1,29 @@
 {
   "files": {
     "main.css": "/goit-react-hw-08-phonebook/static/css/main.5a69b6ff.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.27bbeeae.js",
-    "static/js/149.42564f6d.chunk.js": "/goit-react-hw-08-phonebook/static/js/149.42564f6d.chunk.js",
-    "static/js/470.f3c66b40.chunk.js": "/goit-react-hw-08-phonebook/static/js/470.f3c66b40.chunk.js",
-    "static/js/327.774a86e4.chunk.js": "/goit-react-hw-08-phonebook/static/js/327.774a86e4.chunk.js",
-    "static/js/693.6c068812.chunk.js": "/goit-react-hw-08-phonebook/static/js/693.6c068812.chunk.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.3aedd58f.js",
+    "static/js/727.859429fc.chunk.js": "/goit-react-hw-08-phonebook/static/js/727.859429fc.chunk.js",
+    "static/js/470.f7b6193b.chunk.js": "/goit-react-hw-08-phonebook/static/js/470.f7b6193b.chunk.js",
+    "static/js/327.c0b8bbca.chunk.js": "/goit-react-hw-08-phonebook/static/js/327.c0b8bbca.chunk.js",
+    "static/js/949.28f41cb5.chunk.js": "/goit-react-hw-08-phonebook/static/js/949.28f41cb5.chunk.js",
     "static/js/256.aee4d849.chunk.js": "/goit-react-hw-08-phonebook/static/js/256.aee4d849.chunk.js",
     "static/js/270.9dde6fae.chunk.js": "/goit-react-hw-08-phonebook/static/js/270.9dde6fae.chunk.js",
+    "static/media/photo-1450818074504-fb9713fe584e.avif": "/goit-react-hw-08-phonebook/static/media/photo-1450818074504-fb9713fe584e.bc0a27298b369b502907.avif",
     "static/media/vintage-typewriter-old-wooden-desk_627494-648.avif": "/goit-react-hw-08-phonebook/static/media/vintage-typewriter-old-wooden-desk_627494-648.491dc0f5a7a6fd3787e1.avif",
     "static/media/photo-1432821596592-e2c18b78144f.avif": "/goit-react-hw-08-phonebook/static/media/photo-1432821596592-e2c18b78144f.daf8f5ffbf47b17e00b3.avif",
     "static/media/vintage-typewriter-with-vase-flowers-cup-coffee_662214-49975.avif": "/goit-react-hw-08-phonebook/static/media/vintage-typewriter-with-vase-flowers-cup-coffee_662214-49975.cdc1c2f9a3198462a6e7.avif",
-    "static/media/e-learning-smartphone-isometric_1284-22565.avif": "/goit-react-hw-08-phonebook/static/media/e-learning-smartphone-isometric_1284-22565.53a6067f86385c19b32f.avif",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
     "main.5a69b6ff.css.map": "/goit-react-hw-08-phonebook/static/css/main.5a69b6ff.css.map",
-    "main.27bbeeae.js.map": "/goit-react-hw-08-phonebook/static/js/main.27bbeeae.js.map",
-    "149.42564f6d.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/149.42564f6d.chunk.js.map",
-    "470.f3c66b40.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/470.f3c66b40.chunk.js.map",
-    "327.774a86e4.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/327.774a86e4.chunk.js.map",
-    "693.6c068812.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/693.6c068812.chunk.js.map",
+    "main.3aedd58f.js.map": "/goit-react-hw-08-phonebook/static/js/main.3aedd58f.js.map",
+    "727.859429fc.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/727.859429fc.chunk.js.map",
+    "470.f7b6193b.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/470.f7b6193b.chunk.js.map",
+    "327.c0b8bbca.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/327.c0b8bbca.chunk.js.map",
+    "949.28f41cb5.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/949.28f41cb5.chunk.js.map",
     "256.aee4d849.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/256.aee4d849.chunk.js.map",
     "270.9dde6fae.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/270.9dde6fae.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5a69b6ff.css",
-    "static/js/main.27bbeeae.js"
+    "static/js/main.3aedd58f.js"
   ]
 }
