@@ -3,15 +3,23 @@ import { Navigation } from "components/Navigation/Navigation";
 import { useSelector } from "react-redux"
 import { selectIsLoggedIn } from "redux/auth/selectors"
 import { UserMenu } from "components/UserMenu/UserMenu";
-import { Flex, Box, Container } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 
 
 export const AppBar = () => {
     const isLoggedIn = useSelector(selectIsLoggedIn);
 
+    const headerStyle = {
+      background: 'linear-gradient(to right, white, lightgray)',  
+    };
+
     return (
-      <Container>
-        <Flex bg="purple.100" w="200px" justify="space-evenly">
+        <Flex
+          justifyContent={'space-between'}
+          h={14}
+          alignItems="center"
+          style={headerStyle}
+        >
           <Box>
             <Navigation />
           </Box>
@@ -25,6 +33,5 @@ export const AppBar = () => {
             </Box>
           )}
         </Flex>
-      </Container>
     );
 }

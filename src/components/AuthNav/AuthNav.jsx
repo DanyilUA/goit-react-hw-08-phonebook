@@ -1,17 +1,30 @@
-import { Box, Flex } from '@chakra-ui/react';
+import { Box, Flex, Text } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
 
 export const AuthNav = () => {
     return (
-      <Flex justify={'space-between'}>
-        <Box w="150px" mr="20px">
-          <NavLink className="asd" to="/register">
-            Register
+      <Flex justifyContent="flex-end">
+        <Box>
+          <NavLink to="/register">
+            <Text
+              mr={5}
+              _hover={{ color: 'teal.600', textDecoration: 'underline' }}
+              fontWeight={700}
+              fontSize={20}
+            >
+              Register
+            </Text>
           </NavLink>
         </Box>
         <Box>
-          <NavLink className="asd" to="/login">
-            Log In
+          <NavLink to="/login">
+            <Text
+              _hover={{ color: 'teal.600', textDecoration: 'underline' }}
+              fontWeight={700}
+              fontSize={20}
+            >
+              Log In
+            </Text>
           </NavLink>
         </Box>
       </Flex>

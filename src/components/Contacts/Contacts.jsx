@@ -15,7 +15,7 @@ export function ContactsList() {
   const showContacts = Array.isArray(contacts) && contacts.length > 0;
 
     return (
-      <List>
+      <List ml={10}>
         {showContacts &&
           getFilteredContacts().map(contact => (
             <ListItem

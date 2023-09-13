@@ -6,18 +6,18 @@ import backgroundImage from '../../images/vintage-typewriter-with-vase-flowers-c
 
 export default function LogInPage() {
   return (
-    <Box position="relative" w="100%" minHeight="100vh" overflow="hidden">
-      <Box
-        position="absolute"
-        top={0}
-        left={0}
-        w="100%"
-        h="100%"
-        bg={`url(${backgroundImage}) center/cover no-repeat`}
-        filter="blur(3px)"
-        zIndex={-1}
-      />
-      <LogInForm />
-    </Box>
+      <Box position="relative" w="100%" minHeight="900" overflow="hidden">
+        <Box
+          position="absolute"
+          top={0}
+          left={0}
+          w="100%"
+          h="100%"
+          bg={`url(${backgroundImage}) center/cover no-repeat`}
+          filter="blur(3px)"
+          zIndex={-1}
+        />
+        <LogInForm />
+      </Box>
   );
 }

@@ -63,7 +63,12 @@ export const LogInForm = () => {
                 }}
               />
             </FormControl>
-            <Button type="submit">Log in</Button>
+            <Button
+              type="submit"
+              _hover={{ cursor: 'pointer', backgroundColor: 'lightblue' }} // Set cursor to pointer on hover
+            >
+              Log in
+            </Button>
           </form>
         </Box>
       </Box>

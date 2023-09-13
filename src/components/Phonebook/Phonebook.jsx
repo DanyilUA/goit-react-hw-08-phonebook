@@ -42,7 +42,7 @@ export default function Phonebook() {
         };
 
   return (
-    <Box maxW={480}>
+    <Box maxW={480} ml={10}>
       <form action="" onSubmit={handleFomSubmit}>
         <FormLabel htmlFor={nameInputId} style={labelStyle}>
           Name
@@ -85,10 +85,10 @@ export default function Phonebook() {
         <Button
           type="submit"
           mt={3}
-          colorScheme="teal"  
-          size="md"  
-          fontWeight="bold" 
-          _hover={{ bg: 'teal.600' }} 
+          colorScheme="teal"
+          size="md"
+          fontWeight="bold"
+          _hover={{ bg: 'teal.600', cursor: 'pointer' }}
         >
           Add contact
         </Button>{' '}

@@ -75,7 +75,12 @@ export const RegisterForm = () => {
                 }}
               />
             </FormControl>
-            <Button type="submit">Register</Button>
+            <Button
+              type="submit"
+              _hover={{ cursor: 'pointer', backgroundColor: 'lightblue' }} // Set cursor to pointer on hover
+            >
+              Register
+            </Button>
           </form>
         </Box>
       </Box>

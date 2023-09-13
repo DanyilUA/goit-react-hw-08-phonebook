@@ -20,7 +20,7 @@ const Filter = () => {
 
 
   return (
-    <Box maxW="480px" mb={10}>
+    <Box maxW="480px" mb={10} mt={20} ml={10}>
       <FormControl>
         <FormLabel style={labelStyle}>
           Find contacts by name

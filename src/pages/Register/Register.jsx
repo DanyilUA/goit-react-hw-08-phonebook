@@ -5,7 +5,7 @@ import backgroundImage from '../../images/photo-1432821596592-e2c18b78144f.avif'
 
 const RegisterPage = () => {
     return (
-      <Box position="relative" w="100%" h={800} overflow="hidden">
+      <Box position="relative" w="100%" minHeight="100vh" overflow="hidden">
         <Box
           position="absolute"
           top={0}
